@@ -345,7 +345,6 @@ public:
     }
 
     void resetGameState() {
-        this->field = TetroField();
         this->tickAccDown = 0.0;
         this->score = 0;
         this->isLose = false;

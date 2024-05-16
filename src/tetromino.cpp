@@ -53,7 +53,8 @@ public:
     void clear() {
         for (int x = 0; x < FIELD_W; x++) {
             for (int y = 0; y < FIELD_H; y++) {
-
+                auto tile = this->getAssured(x, y);
+                *tile = std::nullopt;
             }
         }
     }
